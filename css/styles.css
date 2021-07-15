@@ -1,0 +1,320 @@
+html {
+    font-size: 1.4vw;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: cornsilk;
+    overflow-x: hidden;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Commons */
+
+section,
+header,
+footer {
+    padding: 1rem 2rem;
+}
+
+
+/* header styling */
+
+header {
+    background: url("../images/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: cornsilk;
+    border: 2px solid none;
+}
+
+header div.name {
+    padding: 3rem 0;
+}
+
+header div.name .im {
+    font-family: "Fira-Sans", sans-serif;
+    font-size: 3rem;
+    margin: 0;
+}
+
+header div.name h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 4rem;
+    margin: 2rem 0;
+}
+
+header div.name .bib {
+    font-family: "Fira-Sans", sans-serif;
+    font-size: 1.3rem;
+    color: #eebb4d;
+    margin-top: -1rem;
+    font-weight: 600;
+}
+
+header div.name .bib span {
+    text-decoration: underline;
+}
+
+header div.my-image img {
+    width: 11rem;
+    height: 11rem;
+    margin-bottom: 1rem;
+}
+
+
+/* About section styling */
+
+.about-head h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+#about .about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 4rem 0;
+}
+
+#about .about-me div {
+    border: 2px solid #d83b6e;
+    width: 25%;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#about .about-me div .stu {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.3rem;
+    color: rgb(92, 91, 91);
+}
+
+#about .about-me .college a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: rgb(45, 0, 84);
+    transition: 0.3s all;
+    font-size: 1rem;
+}
+
+#about .about-me .college a:hover {
+    text-decoration: underline;
+}
+
+#about .about-me .course p:last-child {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+}
+
+#about ul {
+    list-style: none;
+}
+
+#about .subject a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: rgb(45, 0, 84);
+}
+
+#about .subject a:hover {
+    text-decoration: underline;
+}
+
+
+/* Subjects section styling */
+
+.sub {
+    padding: 2rem 4.6rem;
+}
+
+.sub .top-container {
+    padding: 1rem;
+}
+
+.sub .container {
+    display: flex;
+    flex-direction: row;
+}
+
+.sub .container .heading {
+    width: 20% !important;
+}
+
+.sub .container .content {
+    display: flex;
+    width: 80% !important;
+}
+
+.sub .container .heading p {
+    font-family: "Ubuntu";
+    font-size: 1rem;
+    color: rgb(92, 91, 91);
+}
+
+.sub .container .content p {
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* horizontal rule styling */
+
+.subject-divide {
+    width: 90%;
+    border: none;
+    border-top: 2px solid #d83b6e;
+    opacity: 50%;
+}
+
+.divide {
+    width: 10%;
+    border: none;
+    border-top: 15px dotted #d83b6e;
+    opacity: 50%;
+}
+
+
+/* fun with strings section styling */
+
+#fun-with-strings form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+}
+
+#fun-with-strings form .string-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+    margin: 2rem 0;
+}
+
+#fun-with-strings form .string-inputs input {
+    width: 30%;
+    font-size: 1rem;
+    border: 2px solid #d83b6e;
+    border-radius: 5px;
+    padding: 6px;
+    font-family: "Ubuntu", sans-serif;
+    margin: 0 1rem;
+}
+
+#fun-with-strings form .string-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+}
+
+button {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    background-color: #d83b6e;
+    border: 2px solid #d83b6e;
+    border-radius: 5px;
+    padding: 6px 15px;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    margin: 0 1rem;
+    transition: 0.3s all;
+}
+
+button:hover {
+    background-color: cornsilk;
+    color: #d83b6e;
+}
+
+#fun-with-strings form .result {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.3s all;
+}
+
+
+/* fun with numbers section styling */
+
+#fun-with-numbers form {
+    display: flex;
+    padding: 1rem 4.6rem;
+}
+
+.form-content {
+    visibility: hidden;
+}
+
+#fun-with-numbers form div {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+
+#fun-with-numbers div label {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+}
+
+#fun-with-numbers div input {
+    margin-bottom: 1.5rem;
+    border: 2px solid #d83b6e;
+    border-radius: 5px;
+    padding: 6px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.res {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 0.8;
+    visibility: hidden;
+}
+
+.res p:last-child {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+
+/* footer styling */
+
+footer {
+    background-color: #d83b6e;
+    color: cornsilk;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+}
+
+.for-content {
+    visibility: visible;
+}
